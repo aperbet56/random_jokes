@@ -1,0 +1,92 @@
+/**** Reset ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/**** Style général de la page ****/
+body {
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+  header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  main {
+   min-height: 92%;
+   margin-top: 130px;
+  }
+
+  .jokes__app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+    width: 70%;
+    min-width: 400px;
+    max-width: 800px;
+    background-color: rgba(56, 155, 242, 0.96);
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.307);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .jokes__app:hover {
+    transform: scale(1.02);
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline : none;
+    background-color: rgb(7, 44, 77);
+    color: #ffffff;
+  }
+
+  /**** Responsive ****/
+  @media screen and (max-width: 444px){
+    h1 {
+        font-size: 22px;
+    }
+
+    .jokes__app {
+        font-size: 17px;
+        min-width: 200px;
+        max-width: 400px;
+        width: 92%;
+        line-height: 30px;
+        border-radius: 15px;
+        padding: 15px;
+       
+    }
+     h2 {
+        font-size: 18px;
+     }
+
+     .btn {
+      font-size: 18px;
+      padding: 8px;
+     }
+  }
