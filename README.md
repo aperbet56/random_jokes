@@ -1,5 +1,7 @@
 ## 🤣 RIGOLOTES : BLAGUES & DEVINETTES 😂
 
+![Design preview for the project](./img/preview.png)
+
 ## Le challenge
 
 Création du projet : Rigolotes : Blagues & Devinettes en HTML5, CSS3 et JavaScript.
