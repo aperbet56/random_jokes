@@ -1,92 +1,159 @@
+/**** Importtaion de la police ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
 /**** Reset ****/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-/**** Style général de la page ****/
-body {
-    min-height: 100vh;
-    background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  header {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
+
+button {
+  border: none;
+  outline: none;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+/**** body ****/
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #abd1c6;
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+}
+
+/**** header et footer ****/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+}
+
+/**** header ****/
+
+header {
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #001e1d;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h1,
+header p {
+  text-align: center;
+}
+
+header p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/**** main ****/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 92%;
+}
+
+/**** section ****/
+
+.jokes__app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  min-width: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #004643;
+  color: #fffffe;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.69);
+  transition: all 0.2s ease-in-out;
+}
+
+.jokes__app:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h2,
+#content__joke {
+  margin-bottom: 15px;
+}
+
+#content__joke {
+  color: #e8e4e6;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9bc60;
+  color: #001e1d;
+  cursor: pointer;
+}
+
+/**** footer ****/
+
+.footer__text {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 572px) {
 
   h1 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 24px;
   }
 
-  main {
-   min-height: 92%;
-   margin-top: 130px;
+  header p {
+    font-size: 20px;
   }
 
   .jokes__app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: justify;
-    width: 70%;
-    min-width: 400px;
-    max-width: 800px;
-    background-color: rgba(56, 155, 242, 0.96);
-    border-radius: 20px;
-    padding: 20px 40px;
-    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.307);
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .jokes__app:hover {
-    transform: scale(1.02);
+    font-size: 17px;
+    min-width: 200px;
+    max-width: 400px;
+    width: 92%;
+    border-radius: 15px;
+    padding: 15px;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .btn {
-    margin-top: 10px;
-    font-size: 22px;
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline : none;
-    background-color: rgb(7, 44, 77);
-    color: #ffffff;
+    font-size: 18px;
+    padding: 8px;
   }
-
-  /**** Responsive ****/
-  @media screen and (max-width: 444px){
-    h1 {
-        font-size: 22px;
-    }
-
-    .jokes__app {
-        font-size: 17px;
-        min-width: 200px;
-        max-width: 400px;
-        width: 92%;
-        line-height: 30px;
-        border-radius: 15px;
-        padding: 15px;
-       
-    }
-     h2 {
-        font-size: 18px;
-     }
-
-     .btn {
-      font-size: 18px;
-      padding: 8px;
-     }
-  }
+}
